@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="eac18f21-3f67-4f2b-8e67-fe5cedc94540" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Cards/Card.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Character/Hand/CardSpace.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://C:/Program Files/Unity/Hub/Editor/2019.2.0f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Image.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Joysticks/FixedJoystick.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Character/UI/ButtonCard.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Cards/Magic/CardMagic.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Base/Joystick.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Cards/Attack/CardAttack.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Cards/Deck.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Character/UI/UiController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Cards/CardDataBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GameInstance.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Character/Hand/Hand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Character/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.0.13/UnityEditor.TestRunner/GUI/IGuiHelper.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Cards/CardDataBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Character/MoveHand/DragAndDrop.cs" />
+        <option value="$PROJECT_DIR$/Assets/Character/Hand/MoveCards.cs" />
+        <option value="$PROJECT_DIR$/Assets/Character/Hand/CardActivater.cs" />
+        <option value="$PROJECT_DIR$/Assets/Character/Hand/PlayCard.cs" />
+        <option value="$PROJECT_DIR$/Assets/Character/Animation.cs" />
+        <option value="$USER_HOME$/Desktop/PSDK/Data/Viewport.json" />
+        <option value="$USER_HOME$/Desktop/PSDK/pokemonsdk/scripts/00000 PSDK_CONFIG.rb" />
+        <option value="$USER_HOME$/Desktop/PSDK/Data/project_identity.yml" />
+        <option value="$PROJECT_DIR$/Assets/Cards/Magia/CardMagic.cs" />
+        <option value="$PROJECT_DIR$/Assets/Cards/Deck.cs" />
+        <option value="$PROJECT_DIR$/Assets/Cards/Magic/CardMagic.cs" />
+        <option value="$PROJECT_DIR$/Assets/Cards/Card.cs" />
+        <option value="$PROJECT_DIR$/Assets/Cards/Attack/BrokenAttack.cs" />
+        <option value="$PROJECT_DIR$/Assets/Cards/Attack/CardAttack.cs" />
+        <option value="$PROJECT_DIR$/Assets/Character/UI/LifeUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/GameInstance.cs" />
+        <option value="$PROJECT_DIR$/Assets/Character/Hand/Hand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Character/UI/UIController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Character/UI/ButtonCard.cs" />
+        <option value="$PROJECT_DIR$/Assets/Character/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Character/Hand/CardSpace.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1aDThUNMHIX72MYoCluRsDdQXdZ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eac18f21-3f67-4f2b-8e67-fe5cedc94540" name="Default Changelist" comment="" />
+      <created>1586269306272</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586269306272</updated>
+      <workItem from="1586269406231" duration="727000" />
+      <workItem from="1586270865264" duration="2548000" />
+      <workItem from="1586344024726" duration="6991000" />
+      <workItem from="1586879204427" duration="5240000" />
+      <workItem from="1586952895022" duration="9450000" />
+      <workItem from="1587035516207" duration="8267000" />
+      <workItem from="1587058502562" duration="6240000" />
+      <workItem from="1587122608001" duration="8423000" />
+      <workItem from="1587398297585" duration="6331000" />
+      <workItem from="1587465422343" duration="6224000" />
+      <workItem from="1587476173285" duration="4000" />
+      <workItem from="1587558610502" duration="3352000" />
+      <workItem from="1587645020288" duration="280000" />
+      <workItem from="1588157341939" duration="1248000" />
+      <workItem from="1588161370240" duration="260000" />
+      <workItem from="1588165137280" duration="5511000" />
+      <workItem from="1588170768954" duration="477000" />
+      <workItem from="1588251473870" duration="587000" />
+      <workItem from="1588337068497" duration="7704000" />
+      <workItem from="1588597923729" duration="637000" />
+      <workItem from="1588599604310" duration="176000" />
+      <workItem from="1588679011097" duration="5079000" />
+      <workItem from="1588692614874" duration="96000" />
+      <workItem from="1588766474207" duration="4968000" />
+      <workItem from="1588772944041" duration="1562000" />
+      <workItem from="1588781485454" duration="6160000" />
+      <workItem from="1588943463324" duration="580000" />
+    </task>
+    <servers />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="WindowStateProjectService">
+    <state x="272" y="22" key="#Notifications" timestamp="1586270900030">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="272" y="22" key="#Notifications/0.0.1360.728@0.0.1360.728" timestamp="1586270900030" />
+    <state x="272" y="96" key="Rider.ProjectTemplateDialog.Size" timestamp="1588157371472">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="272" y="96" key="Rider.ProjectTemplateDialog.Size/0.0.1360.728@0.0.1360.728" timestamp="1588157371472" />
+    <state x="489" y="64" key="RiderGenerateDialog" timestamp="1586963542815">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="489" y="64" key="RiderGenerateDialog/0.0.1360.728@0.0.1360.728" timestamp="1586963542815" />
+    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1588343275761">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1360.728@0.0.1360.728" timestamp="1588343275761" />
+  </component>
+</project>

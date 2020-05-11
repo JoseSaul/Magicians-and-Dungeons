@@ -1,16 +1,29 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using Character.UI;
+﻿using Character.UI;
 using UnityEngine;
 
 public class GameInstance : MonoBehaviour
 {
     private static GameInstance Instance { get; set; }
-
+    private UiController _uiController;
+    
     [SerializeField] private Deck deck;
-    private int _lv, _exp, _maxExp = 10, _life, _maxLife = 10, _mana, _maxMana = 10, _rechargeCard = 3, _recoverMana = 2;
+    private int _lv = 1, _exp, _maxExp = 10, _maxLife = 10, _life, _maxMana = 10, _mana;
+    private float _rechargeCard = 3, _recoverMana = 4f, _manaCoolDown;
 
+
+
+    private void Start()
+    {
+        _uiController = FindObjectOfType<UiController>();
+        _manaCoolDown = _recoverMana;
+        _life = _maxLife;
+        _mana = _maxMana;
+    }
+
+    private void Update()
+    {
+        CheckMana();
+    }
 
     private void Awake()
     {
@@ -25,7 +38,8 @@ public class GameInstance : MonoBehaviour
         }
     }
 
-    public void InitUI()
+
+    public void InitUi()
     {
         _life = _maxLife;
         _mana = _maxMana;
@@ -51,7 +65,7 @@ public class GameInstance : MonoBehaviour
         return _maxExp;
     }
 
-    public int GetLV()
+    public int GetLv()
     {
         return _lv;
     }
@@ -72,14 +86,33 @@ public class GameInstance : MonoBehaviour
         return _maxMana;
     }
 
-    public int GetRechargeCard()
+    private void CheckMana()
+    {
+        if (_maxMana > _mana)
+        {
+            if (_manaCoolDown > 0)
+            {
+                _manaCoolDown -= Time.deltaTime;
+            }
+            else
+            {
+                _mana++;
+                _uiController.SetMana(_mana);
+                _manaCoolDown = _recoverMana;
+            }
+        }
+    }
+
+    public float GetRechargeCard()
     {
         return _rechargeCard;
     }
 
-    public int GetRecoverMana()
+    public float GetRecoverMana()
     {
         return _recoverMana;
     }
-    
+
+
+
 }

@@ -313,7 +313,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 2378478379528084053}
   m_HandleRect: {fileID: 0}
@@ -413,7 +413,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 3372380872184735191}
   m_HandleRect: {fileID: 0}
@@ -1573,7 +1573,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 6669475688157202251}
   m_HandleRect: {fileID: 0}
@@ -1990,11 +1990,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 493262782184983462, guid: 1864d994e940c254faed371453b31fe1,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 4475075646838411385}
     - target: {fileID: 5335350133204463471, guid: 1864d994e940c254faed371453b31fe1,
         type: 3}
       propertyPath: hand
@@ -2005,6 +2000,11 @@ PrefabInstance:
       propertyPath: id
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 493262782184983462, guid: 1864d994e940c254faed371453b31fe1,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 4475075646838411385}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1864d994e940c254faed371453b31fe1, type: 3}
 --- !u!4 &756706159382649156 stripped
@@ -2080,16 +2080,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 493262782184983462, guid: 1864d994e940c254faed371453b31fe1,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 4475075646838411385}
     - target: {fileID: 5335350133204463471, guid: 1864d994e940c254faed371453b31fe1,
         type: 3}
       propertyPath: hand
       value: 
       objectReference: {fileID: 65135619179465753}
+    - target: {fileID: 493262782184983462, guid: 1864d994e940c254faed371453b31fe1,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 4475075646838411385}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1864d994e940c254faed371453b31fe1, type: 3}
 --- !u!4 &2797335656387690892 stripped
@@ -2165,11 +2165,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 493262782184983462, guid: 1864d994e940c254faed371453b31fe1,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 4475075646838411385}
     - target: {fileID: 5335350133204463471, guid: 1864d994e940c254faed371453b31fe1,
         type: 3}
       propertyPath: hand
@@ -2180,6 +2175,11 @@ PrefabInstance:
       propertyPath: id
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 493262782184983462, guid: 1864d994e940c254faed371453b31fe1,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 4475075646838411385}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1864d994e940c254faed371453b31fe1, type: 3}
 --- !u!4 &2707364025118665003 stripped

@@ -42,19 +42,19 @@ namespace Character.UI
         }
 
 
-        public void SetMaxEXP(int maxEXP)
+        public void SetMaxExp(int maxExp)
         {
-            expSlider.maxValue = maxEXP;
-            expSlider.value = maxEXP;
+            expSlider.maxValue = maxExp;
+            expSlider.value = maxExp;
         }
 
-        public void SetEXP(int exp)
+        public void SetExp(int exp)
         {
             expSlider.value = exp;
         }
 
 
-        public void SetLV(int lv)
+        public void SetLv(int lv)
         {
             this.textLV.text = "LV " + lv;
         }

@@ -1,21 +1,19 @@
 ﻿using System;
 using Cards;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 namespace Character.Hand
 {
     public class CardSpace : MonoBehaviour
     {
-    
-        [SerializeField] private Hand hand;
-        [SerializeField] private int id;
         private Card _card;
+        private bool _available = true;
         
 
         public void AddCardToSpace(Card card)
         {
             _card = Instantiate(card, transform.position, Quaternion.Euler(-45,0,0),transform);
+            _available = false;
         }
 
         public void PlayCard()
@@ -29,10 +27,30 @@ namespace Character.Hand
                 
                     _card.PlayCard();
                     Destroy(_card.gameObject);
-                    hand.DrawCard(id);
+                    _available = true;
+                    FindObjectOfType<Hand>().DrawCard(this);
                 }
-            
             }
+        }
+
+
+        public void DeleteCard()
+        {
+            try
+            {
+                Destroy(_card.gameObject);
+            }
+            catch (NullReferenceException)
+            {
+                
+            }
+            _available = true;
+        }
+
+
+        public bool GetAvailable()
+        {
+            return _available;
         }
         
     

@@ -7,9 +7,8 @@ namespace Character.Hand
     {
     
         [SerializeField] private CardSpace[] cardSpaces;
-        private readonly bool[] _space = new[] {true, true, true};
         private Deck _deck;
-        private int _rechargeCard;
+        private float _rechargeCard;
 
         private void Start()
         {
@@ -25,45 +24,42 @@ namespace Character.Hand
         public IEnumerator InitHand()
         {
             yield return new WaitForSeconds(0.1f);
-        
-            cardSpaces[0].AddCardToSpace(_deck.GetCard());
-            _space[0] = false;
-            cardSpaces[1].AddCardToSpace(_deck.GetCard());
-            _space[1] = false;
-            cardSpaces[2].AddCardToSpace(_deck.GetCard());
-            _space[2] = false;
+
+            for (int i = 0; i < 3; i++)
+            {
+                cardSpaces[i].DeleteCard();
+                cardSpaces[i].AddCardToSpace(_deck.GetCard());
+            }
+            
         }
 
     
-        private IEnumerator AddCardToSpace(int space)
+        private IEnumerator AddCardToSpace(CardSpace space)
         {
             yield return new WaitForSeconds(_rechargeCard);
         
-            if (_space[space])
+            if (space.GetAvailable())
             {
-                cardSpaces[space].AddCardToSpace(_deck.GetCard());
-                _space[space] = false;
+                space.AddCardToSpace(_deck.GetCard());
             }
         }
     
 
-        public void DrawCard(int space)
+        public void DrawCard(CardSpace space)
         {
-            _space[space] = true;
             StartCoroutine(AddCardToSpace(space));
         }
 
 
         public void ExtraDraw(int nDraws)
         {
-            for (int i = 0; i < _space.Length; i++)
+            for (int i = 0; i < cardSpaces.Length; i++)
             {
                 if (nDraws > 0)
                 {
-                    if (_space[i])
+                    if (cardSpaces[i].GetAvailable())
                     {
-                        cardSpaces[2].AddCardToSpace(_deck.GetCard());
-                        _space[2] = false;
+                        cardSpaces[i].AddCardToSpace(_deck.GetCard());
                         nDraws--;
                     }
                 }

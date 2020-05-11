@@ -42,16 +42,17 @@
         <option value="$PROJECT_DIR$/Assets/Cards/Magia/CardMagic.cs" />
         <option value="$PROJECT_DIR$/Assets/Cards/Deck.cs" />
         <option value="$PROJECT_DIR$/Assets/Cards/Magic/CardMagic.cs" />
-        <option value="$PROJECT_DIR$/Assets/Cards/Card.cs" />
         <option value="$PROJECT_DIR$/Assets/Cards/Attack/BrokenAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Cards/Attack/CardAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Character/UI/LifeUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/GameInstance.cs" />
-        <option value="$PROJECT_DIR$/Assets/Character/Hand/Hand.cs" />
         <option value="$PROJECT_DIR$/Assets/Character/UI/UIController.cs" />
         <option value="$PROJECT_DIR$/Assets/Character/UI/ButtonCard.cs" />
         <option value="$PROJECT_DIR$/Assets/Character/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Character/UI/UiController.cs" />
         <option value="$PROJECT_DIR$/Assets/Character/Hand/CardSpace.cs" />
+        <option value="$PROJECT_DIR$/Assets/Character/Hand/Hand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Cards/Card.cs" />
+        <option value="$PROJECT_DIR$/Assets/GameInstance.cs" />
       </list>
     </option>
   </component>
@@ -65,6 +66,7 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -117,6 +119,8 @@
       <workItem from="1588772944041" duration="1562000" />
       <workItem from="1588781485454" duration="6160000" />
       <workItem from="1588943463324" duration="580000" />
+      <workItem from="1589188560370" duration="8273000" />
+      <workItem from="1589199034060" duration="6130000" />
     </task>
     <servers />
   </component>
@@ -135,9 +139,13 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="489" y="64" key="RiderGenerateDialog/0.0.1360.728@0.0.1360.728" timestamp="1586963542815" />
-    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1588343275761">
+    <state x="181" y="6" key="SettingsEditor" timestamp="1589205661459">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1360.728@0.0.1360.728" timestamp="1588343275761" />
+    <state x="181" y="6" key="SettingsEditor/0.0.1360.728@0.0.1360.728" timestamp="1589205661459" />
+    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1589191855422">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1360.728@0.0.1360.728" timestamp="1589191855422" />
   </component>
 </project>

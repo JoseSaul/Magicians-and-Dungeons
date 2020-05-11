@@ -27,11 +27,11 @@ namespace Character
             _anim = GetComponent<Animator>();
             _gameInstance = FindObjectOfType<GameInstance>();
             
-            _gameInstance.InitUI();
+            _gameInstance.InitUi();
             uiController.SetMaxHealth(_gameInstance.GetMaxLife());
             uiController.SetMaxMana(_gameInstance.GetMaxMana());
-            uiController.SetMaxEXP(_gameInstance.GetMaxExp());
-            uiController.SetLV(_gameInstance.GetLV());
+            uiController.SetMaxExp(_gameInstance.GetMaxExp());
+            uiController.SetLv(_gameInstance.GetLv());
         }
 
         private void Update()

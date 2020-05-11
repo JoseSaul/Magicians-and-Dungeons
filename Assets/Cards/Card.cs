@@ -25,5 +25,10 @@ namespace Cards
             return manaCost;
         }
 
+        public void UpdateTextCard(string text)
+        {
+            textMeshCard.text = text;
+        }
+
     }
 }

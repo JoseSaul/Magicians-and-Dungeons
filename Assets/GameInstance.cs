@@ -1,4 +1,5 @@
-﻿using Character.UI;
+﻿using Cards;
+using Character.UI;
 using UnityEngine;
 
 public class GameInstance : MonoBehaviour

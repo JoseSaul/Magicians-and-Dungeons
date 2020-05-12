@@ -40,7 +40,6 @@
         <option value="$USER_HOME$/Desktop/PSDK/pokemonsdk/scripts/00000 PSDK_CONFIG.rb" />
         <option value="$USER_HOME$/Desktop/PSDK/Data/project_identity.yml" />
         <option value="$PROJECT_DIR$/Assets/Cards/Magia/CardMagic.cs" />
-        <option value="$PROJECT_DIR$/Assets/Cards/Deck.cs" />
         <option value="$PROJECT_DIR$/Assets/Cards/Magic/CardMagic.cs" />
         <option value="$PROJECT_DIR$/Assets/Cards/Attack/BrokenAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Cards/Attack/CardAttack.cs" />
@@ -50,9 +49,10 @@
         <option value="$PROJECT_DIR$/Assets/Character/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Character/UI/UiController.cs" />
         <option value="$PROJECT_DIR$/Assets/Character/Hand/CardSpace.cs" />
-        <option value="$PROJECT_DIR$/Assets/Character/Hand/Hand.cs" />
         <option value="$PROJECT_DIR$/Assets/Cards/Card.cs" />
+        <option value="$PROJECT_DIR$/Assets/Cards/Deck.cs" />
         <option value="$PROJECT_DIR$/Assets/GameInstance.cs" />
+        <option value="$PROJECT_DIR$/Assets/Character/Hand/Hand.cs" />
       </list>
     </option>
   </component>
@@ -121,6 +121,7 @@
       <workItem from="1588943463324" duration="580000" />
       <workItem from="1589188560370" duration="8273000" />
       <workItem from="1589199034060" duration="6130000" />
+      <workItem from="1589281274252" duration="7152000" />
     </task>
     <servers />
   </component>

@@ -1,24 +1,50 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using Cards;
 using UnityEngine;
+using Random = System.Random;
 
-public class Deck : MonoBehaviour
+namespace Cards
 {
-    
-    [SerializeField] private Card[] deck = new Card[30];
-    private Card[] _deck;
-
-    private void Start()
+    public class Deck : MonoBehaviour
     {
-        _deck = deck;
-    }
-
-
-    public Card GetCard()
-    {
-        return _deck[3];
-    }
     
+        [SerializeField] private Card[] deck = new Card[30];
+        [SerializeField] private Card brokenCard;
+        private readonly List<Card> _deck = new List<Card>();
+
+
+        private void Start()
+        {
+            InitDeck();
+        }
+
+        public void InitDeck()
+        {
+            foreach (var card in deck)
+            {
+                if (card != null)
+                {
+                    _deck.Add(card);
+                    print("Creo haberla añadido");
+                }
+            }
+        }
+        
+        public Card GetCard()
+        {
+            if (_deck.Count > 0)
+            {
+                var random = new Random();
+                var index = random.Next(_deck.Count);
+                var selectedCard = _deck[index];
+                _deck.RemoveAt(index);
+                return selectedCard;
+            }
+            else
+            {
+                return brokenCard;
+            }
+        }
+    
+    }
 }

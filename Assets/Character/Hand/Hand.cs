@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using Cards;
 using UnityEngine;
 
 namespace Character.Hand
@@ -12,7 +13,7 @@ namespace Character.Hand
 
         private void Start()
         {
-            GameInstance gameInstance = GameObject.Find("GameInstance").GetComponent<GameInstance>();
+           var gameInstance = GameObject.Find("GameInstance").GetComponent<GameInstance>();
             _deck = gameInstance.GetDeck();
             _rechargeCard = gameInstance.GetRechargeCard();
 

@@ -44,9 +44,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deck:
-  - {fileID: 7546758821526543263, guid: 8277b058aa47ab84f8cf16ebc33e44b4, type: 3}
-  - {fileID: 7546758821526543263, guid: 555c9b32e47d26e4d90a45786bee0be4, type: 3}
-  - {fileID: 7546758821526543263, guid: a091b07ee8b07dc43bb6caec9e00ea01, type: 3}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -74,3 +71,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  brokenCard: {fileID: 0}

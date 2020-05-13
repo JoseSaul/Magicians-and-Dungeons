@@ -18,7 +18,7 @@ namespace Character.Hand
 
         public void PlayCard()
         {
-            if (!_card.Equals(null) && FindObjectOfType<PlayerController>().GetCanMove())
+            if (!_card.Equals(null) && FindObjectOfType<PlayerController>().GetCanMove() && !Time.timeScale.Equals(0))
             {
                 GameInstance gameInstance = FindObjectOfType<GameInstance>();
                 if (gameInstance.GetMana() >= _card.GetManaCost())

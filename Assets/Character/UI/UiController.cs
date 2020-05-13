@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using Character.Hand;
+using UnityEditor;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace Character.UI
@@ -11,7 +13,8 @@ namespace Character.UI
         [SerializeField] private Slider expSlider;
         [SerializeField] private Text textNumberCards;
         [SerializeField] private Text textLV;
-
+        [SerializeField] private Canvas canvasPause;
+        
         [SerializeField] private Text textMaxLife;
         [SerializeField] private Text textLife;
         [SerializeField] private Text textMana;
@@ -63,6 +66,13 @@ namespace Character.UI
         public void SetNumberCards(int numberCards)
         {
             this.textNumberCards.text = numberCards + "";
+        }
+
+
+        public void SetGamePaused()
+        {
+            canvasPause.gameObject.SetActive(true);
+            Time.timeScale = 0;
         }
     
     

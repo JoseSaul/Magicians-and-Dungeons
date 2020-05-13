@@ -25,7 +25,6 @@ namespace Cards
                 if (card != null)
                 {
                     _deck.Add(card);
-                    print("Creo haberla añadido");
                 }
             }
         }

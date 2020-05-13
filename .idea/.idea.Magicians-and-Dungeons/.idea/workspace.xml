@@ -11,20 +11,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Cards/Card.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Character/Hand/Hand.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Character/Hand/CardSpace.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Unity/Hub/Editor/2019.2.0f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Image.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Joysticks/FixedJoystick.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Character/UI/ButtonCard.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Cards/Magic/CardMagic.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Base/Joystick.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Cards/Attack/CardAttack.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Cards/Deck.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Character/UI/UiController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Cards/CardDataBase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/GameInstance.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Character/Hand/Hand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Character/UI/ButtonCard.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Base/Joystick.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Character/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Cards/Deck.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Cards/Card.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Cards/Attack/CardAttack.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GameInstance.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Joysticks/FixedJoystick.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.0.13/UnityEditor.TestRunner/GUI/IGuiHelper.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -47,12 +47,12 @@
         <option value="$PROJECT_DIR$/Assets/Character/UI/UIController.cs" />
         <option value="$PROJECT_DIR$/Assets/Character/UI/ButtonCard.cs" />
         <option value="$PROJECT_DIR$/Assets/Character/PlayerController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Character/UI/UiController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Character/Hand/CardSpace.cs" />
         <option value="$PROJECT_DIR$/Assets/Cards/Card.cs" />
-        <option value="$PROJECT_DIR$/Assets/Cards/Deck.cs" />
         <option value="$PROJECT_DIR$/Assets/GameInstance.cs" />
         <option value="$PROJECT_DIR$/Assets/Character/Hand/Hand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Cards/Deck.cs" />
+        <option value="$PROJECT_DIR$/Assets/Character/UI/UiController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Character/Hand/CardSpace.cs" />
       </list>
     </option>
   </component>
@@ -122,6 +122,7 @@
       <workItem from="1589188560370" duration="8273000" />
       <workItem from="1589199034060" duration="6130000" />
       <workItem from="1589281274252" duration="7152000" />
+      <workItem from="1589379775176" duration="2522000" />
     </task>
     <servers />
   </component>

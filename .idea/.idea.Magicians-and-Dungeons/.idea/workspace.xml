@@ -21,6 +21,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Base/Joystick.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Character/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Cards/Deck.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Character/UI/PauseMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Cards/Card.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Cards/Attack/CardAttack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GameInstance.cs" root0="FORCE_HIGHLIGHTING" />
@@ -53,6 +54,7 @@
         <option value="$PROJECT_DIR$/Assets/Cards/Deck.cs" />
         <option value="$PROJECT_DIR$/Assets/Character/UI/UiController.cs" />
         <option value="$PROJECT_DIR$/Assets/Character/Hand/CardSpace.cs" />
+        <option value="$PROJECT_DIR$/Assets/Character/UI/PauseMenu.cs" />
       </list>
     </option>
   </component>
@@ -123,6 +125,7 @@
       <workItem from="1589199034060" duration="6130000" />
       <workItem from="1589281274252" duration="7152000" />
       <workItem from="1589379775176" duration="2522000" />
+      <workItem from="1589457060003" duration="2305000" />
     </task>
     <servers />
   </component>

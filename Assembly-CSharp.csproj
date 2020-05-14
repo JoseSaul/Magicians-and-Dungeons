@@ -66,6 +66,7 @@
     <Compile Include="Assets\Character\Hand\Hand.cs" />
     <Compile Include="Assets\Character\PlayerController.cs" />
     <Compile Include="Assets\Character\UI\ButtonCard.cs" />
+    <Compile Include="Assets\Character\UI\PauseMenu.cs" />
     <Compile Include="Assets\Character\UI\UiController.cs" />
     <Compile Include="Assets\GameInstance.cs" />
     <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />

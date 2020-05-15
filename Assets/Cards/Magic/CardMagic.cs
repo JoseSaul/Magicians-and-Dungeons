@@ -1,4 +1,5 @@
 ﻿using Character;
+using TMPro;
 using UnityEngine;
 
 namespace Cards.Magic
@@ -6,7 +7,7 @@ namespace Cards.Magic
     public class CardMagic : Card
     {
 
-        [SerializeField] private TextMesh costMeshCard;
+        [SerializeField] private TextMeshPro costMeshCard;
         [SerializeField] private int magicalPower;
         private int _bonusPower;
         
@@ -14,7 +15,7 @@ namespace Cards.Magic
 
         private void Start()
         {
-            TypeCard = 1;
+            typeCard = 1;
             textMeshCard.text = (magicalPower + _bonusPower) + " Magical Damage";
             costMeshCard.text = manaCost + "";
         }

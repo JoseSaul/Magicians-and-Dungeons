@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
 
 namespace Cards
 {
@@ -6,15 +7,15 @@ namespace Cards
     {
         [SerializeField] private byte rarity;
         [SerializeField] private int id;
-        [SerializeField] protected TextMesh textMeshCard;
-        [SerializeField] protected int manaCost = 0;
+        [SerializeField] protected TextMeshPro textMeshCard;
+        [SerializeField] protected int manaCost;
         
-        protected byte TypeCard = 0;
+        protected byte typeCard = 0;
 
 
         public byte GetTypeCard()
         {
-            return TypeCard;}
+            return typeCard;}
 
         
         public virtual void PlayCard(){}

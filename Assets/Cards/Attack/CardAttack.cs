@@ -12,7 +12,7 @@ namespace Cards.Attack
 
         private void Start()
         {
-            TypeCard = 0;
+            typeCard = 0;
             manaCost = 0;
             textMeshCard.text = (power + _bonusPower) + " Physical Damage";
         }

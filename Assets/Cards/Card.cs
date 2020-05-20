@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using System;
+using TMPro;
 using UnityEngine;
 
 namespace Cards
@@ -30,6 +31,13 @@ namespace Cards
         {
             textMeshCard.text = text;
         }
+        
+
+        public int GetId()
+        {
+            return id;
+        }
+
 
     }
 }

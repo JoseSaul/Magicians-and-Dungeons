@@ -141,9 +141,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rarity: 1
   id: 11
-  textMeshCard: {fileID: 0}
+  textMeshCard: {fileID: 4287532564996620377}
   manaCost: 0
-  costMeshCard: {fileID: 0}
+  costMeshCard: {fileID: 11722121559507879}
   magicalPower: 0
 --- !u!1 &7332839925709545973
 GameObject:

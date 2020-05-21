@@ -33,7 +33,6 @@
         <e p="DeckBuilder" t="Include">
           <e p="CardButton.cs" t="Include" />
           <e p="CardsLocation.cs" t="Include" />
-          <e p="Pulsador.cs" t="Include" />
           <e p="TriggerCard.cs" t="Include" />
         </e>
         <e p="GameInstance.cs" t="Include" />

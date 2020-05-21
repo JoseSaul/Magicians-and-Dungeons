@@ -1,7 +1,6 @@
 ﻿using Cards;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace DeckBuilder
 {
@@ -9,29 +8,28 @@ namespace DeckBuilder
     {
 
         [SerializeField] private TextMeshPro copiesText;
-        private int _copies;
-        private Card _card;
+        private Collection _card;
 
 
-        public void CreateCardButton(Card card, int numberCopies)
+        public void CreateCardButton(Collection cardCollection)
         {
-            _card = card;
-            _copies = numberCopies;
-            copiesText.text = _copies + "";
-            Instantiate(card, transform.position, Quaternion.Euler(-90,0,0),transform);
+            _card = cardCollection;
+            copiesText.text = _card.GetQuantity() + "";
+            Instantiate(_card.GetCard(), transform.position, Quaternion.Euler(-90,0,0),transform);
         }
 
         public void AddCard()
         {
-            print("añado");
-            _copies--;
-            copiesText.text = _copies + "";
-            if (_copies <= 0)
-            {
-                Destroy(gameObject);
-            }
+            _card.SetQuantity(_card.GetQuantity() - 1);
+            copiesText.text = _card.GetQuantity() + "";
+            FindObjectOfType<CardsLocation>().UpdateCardButton(_card);
         }
-    
-    
+
+        public void DestroyCardButton()
+        {
+            Destroy(gameObject);
+        }
+
+
     }
 }

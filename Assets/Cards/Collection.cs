@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Cards
 {
@@ -38,6 +39,6 @@ namespace Cards
         {
             return _quantity;
         }
-
+        
     }
 }

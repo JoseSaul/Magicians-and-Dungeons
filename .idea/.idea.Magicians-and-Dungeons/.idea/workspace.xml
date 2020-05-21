@@ -25,7 +25,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Character/UI/PauseMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Cards/Card.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Cards/Attack/CardAttack.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DeckBuilder/Pulsador.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GameInstance.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DeckBuilder/CardButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Joysticks/FixedJoystick.cs" root0="FORCE_HIGHLIGHTING" />
@@ -61,12 +60,12 @@
         <option value="$PROJECT_DIR$/Assets/Scenes/DeckBuilder/CardButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Cards/Card.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/DeckBuilder/CardsLocation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Cards/Collection.cs" />
-        <option value="$PROJECT_DIR$/Assets/GameInstance.cs" />
-        <option value="$PROJECT_DIR$/Assets/DeckBuilder/CardsLocation.cs" />
         <option value="$PROJECT_DIR$/Assets/DeckBuilder/Pulsador.cs" />
         <option value="$PROJECT_DIR$/Assets/DeckBuilder/TriggerCard.cs" />
+        <option value="$PROJECT_DIR$/Assets/GameInstance.cs" />
         <option value="$PROJECT_DIR$/Assets/DeckBuilder/CardButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/DeckBuilder/CardsLocation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Cards/Collection.cs" />
       </list>
     </option>
   </component>
@@ -144,6 +143,7 @@
       <workItem from="1589806259691" duration="12195000" />
       <workItem from="1589880824153" duration="10273000" />
       <workItem from="1589970341912" duration="5896000" />
+      <workItem from="1590054292587" duration="14847000" />
     </task>
     <servers />
   </component>
@@ -158,17 +158,17 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="272" y="96" key="Rider.ProjectTemplateDialog.Size/0.0.1360.728@0.0.1360.728" timestamp="1588157371472" />
-    <state x="489" y="64" key="RiderGenerateDialog" timestamp="1589819076815">
+    <state x="489" y="64" key="RiderGenerateDialog" timestamp="1590073587211">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="489" y="64" key="RiderGenerateDialog/0.0.1360.728@0.0.1360.728" timestamp="1589819076815" />
+    <state x="489" y="64" key="RiderGenerateDialog/0.0.1360.728@0.0.1360.728" timestamp="1590073587211" />
     <state x="181" y="6" key="SettingsEditor" timestamp="1589570822461">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="181" y="6" key="SettingsEditor/0.0.1360.728@0.0.1360.728" timestamp="1589570822461" />
-    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1589191855422">
+    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1590069004771">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1360.728@0.0.1360.728" timestamp="1589191855422" />
+    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1360.728@0.0.1360.728" timestamp="1590069004771" />
   </component>
 </project>

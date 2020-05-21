@@ -25,9 +25,6 @@ public class GameInstance : MonoBehaviour
         _mana = _maxMana;
         
         InitCollection();
-        
-        //Debug
-        FindObjectOfType<CardsLocation>().DebugStart();
     }
 
     private void Update()
@@ -123,18 +120,15 @@ public class GameInstance : MonoBehaviour
         return _recoverMana;
     }
 
-    public Collection[] GetObtainedCard()
+    public List<Collection> GetObtainedCard()
     {
         var collectionList = new List<Collection>();
         foreach (var cardCollected in _collectionCard)
         {
-            if (cardCollected.GetQuantity() > 0)
-            {
-                collectionList.Add(cardCollected);
-            }
+            collectionList.Add(cardCollected);
         }
         
-        return collectionList.ToArray();
+        return collectionList;
     }
 
     private void InitCollection()

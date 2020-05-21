@@ -70,7 +70,6 @@
     <Compile Include="Assets\Character\UI\UiController.cs" />
     <Compile Include="Assets\DeckBuilder\CardButton.cs" />
     <Compile Include="Assets\DeckBuilder\CardsLocation.cs" />
-    <Compile Include="Assets\DeckBuilder\Pulsador.cs" />
     <Compile Include="Assets\DeckBuilder\TriggerCard.cs" />
     <Compile Include="Assets\GameInstance.cs" />
     <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />

@@ -30,6 +30,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Joysticks/FixedJoystick.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DeckBuilder/TriggerCard.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.0.13/UnityEditor.TestRunner/GUI/IGuiHelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DeckBuilder/UiDeckBuilder.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -64,8 +65,10 @@
         <option value="$PROJECT_DIR$/Assets/DeckBuilder/TriggerCard.cs" />
         <option value="$PROJECT_DIR$/Assets/GameInstance.cs" />
         <option value="$PROJECT_DIR$/Assets/DeckBuilder/CardButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/DeckBuilder/CardsLocation.cs" />
         <option value="$PROJECT_DIR$/Assets/Cards/Collection.cs" />
+        <option value="$PROJECT_DIR$/Assets/DeckBuilder/UIDeckBuilder.cs" />
+        <option value="$PROJECT_DIR$/Assets/DeckBuilder/CardsLocation.cs" />
+        <option value="$PROJECT_DIR$/Assets/DeckBuilder/UiDeckBuilder.cs" />
       </list>
     </option>
   </component>
@@ -144,11 +147,23 @@
       <workItem from="1589880824153" duration="10273000" />
       <workItem from="1589970341912" duration="5896000" />
       <workItem from="1590054292587" duration="14847000" />
+      <workItem from="1590145694846" duration="5324000" />
     </task>
     <servers />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="272" y="22" key="#Notifications" timestamp="1586270900030">
       <screen x="0" y="0" width="1360" height="728" />
@@ -166,9 +181,9 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="181" y="6" key="SettingsEditor/0.0.1360.728@0.0.1360.728" timestamp="1589570822461" />
-    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1590069004771">
+    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1590146168855">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1360.728@0.0.1360.728" timestamp="1590069004771" />
+    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1360.728@0.0.1360.728" timestamp="1590146168855" />
   </component>
 </project>

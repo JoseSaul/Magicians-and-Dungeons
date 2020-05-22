@@ -33,8 +33,10 @@ namespace DeckBuilder
                 {
                     var clone = Instantiate(cardButton, new Vector3(positionX, position.y, position.z),
                         Quaternion.Euler(-90, 0, 0), cardButton.transform);
+                       
 
                     clone.transform.parent = transform.parent;
+                    clone.transform.SetParent(gameObject.transform);
                     clone.CreateCardButton(card);
                     _cardButtonList.Add(clone);
                 

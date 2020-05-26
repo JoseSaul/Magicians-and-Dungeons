@@ -8,9 +8,10 @@ namespace DeckBuilder
         [SerializeField] private Slider sliderCards;
         [SerializeField] private CardsLocation cardsLocation;
 
-        public void UpdateSizeSliderCards(int size)
+        public void UpdateSizeSliderCards(float size)
         {
             sliderCards.maxValue = size;
+            sliderCards.value = 0;
         }
 
         public void MoveCards(float value)

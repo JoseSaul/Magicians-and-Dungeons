@@ -20,6 +20,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Character/UI/UiController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Character/UI/ButtonCard.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Base/Joystick.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DeckBuilder/DeckLocation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Character/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Cards/Deck.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Character/UI/PauseMenu.cs" root0="FORCE_HIGHLIGHTING" />
@@ -64,11 +65,12 @@
         <option value="$PROJECT_DIR$/Assets/DeckBuilder/Pulsador.cs" />
         <option value="$PROJECT_DIR$/Assets/DeckBuilder/TriggerCard.cs" />
         <option value="$PROJECT_DIR$/Assets/GameInstance.cs" />
-        <option value="$PROJECT_DIR$/Assets/DeckBuilder/CardButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Cards/Collection.cs" />
         <option value="$PROJECT_DIR$/Assets/DeckBuilder/UIDeckBuilder.cs" />
-        <option value="$PROJECT_DIR$/Assets/DeckBuilder/CardsLocation.cs" />
+        <option value="$PROJECT_DIR$/Assets/DeckBuilder/CardButton.cs" />
         <option value="$PROJECT_DIR$/Assets/DeckBuilder/UiDeckBuilder.cs" />
+        <option value="$PROJECT_DIR$/Assets/DeckBuilder/CardsLocation.cs" />
+        <option value="$PROJECT_DIR$/Assets/DeckBuilder/DeckLocation.cs" />
       </list>
     </option>
   </component>
@@ -148,6 +150,7 @@
       <workItem from="1589970341912" duration="5896000" />
       <workItem from="1590054292587" duration="14847000" />
       <workItem from="1590145694846" duration="5324000" />
+      <workItem from="1590489078096" duration="4955000" />
     </task>
     <servers />
   </component>
@@ -158,7 +161,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

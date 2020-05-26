@@ -13,20 +13,23 @@ namespace DeckBuilder
         private List<Collection> _collection;
         private List<CardButton> _cardButtonList;
         private  const float CardsDistance = 0.5f;
+        private static Vector3 _initPosition;
 
 
         private void Start()
         {
             _cardButtonList = new List<CardButton>();
             _collection = FindObjectOfType<GameInstance>().GetObtainedCard();
+            _initPosition = gameObject.transform.position;
             ShowAllCards();
         }
 
         private void ShowAllCards()
         {
+            gameObject.transform.position = _initPosition;
             float positionX = 0;
             var position = transform.position;
-            
+
             foreach (var card in _collection)
             {
                 if (card.GetQuantity() > 0)
@@ -43,6 +46,7 @@ namespace DeckBuilder
                     positionX += CardsDistance;
                 }
             }
+            FindObjectOfType<UiDeckBuilder>().UpdateSizeSliderCards(positionX - CardsDistance);
         }
 
         public void ShowCardsOfType(string type)

@@ -33,6 +33,7 @@
         <e p="DeckBuilder" t="Include">
           <e p="CardButton.cs" t="Include" />
           <e p="CardsLocation.cs" t="Include" />
+          <e p="DeckLocation.cs" t="Include" />
           <e p="TriggerCard.cs" t="Include" />
           <e p="UIDeckBuilder.cs" t="Include" />
         </e>

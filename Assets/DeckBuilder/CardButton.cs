@@ -6,8 +6,8 @@ namespace DeckBuilder
 {
     public class CardButton : MonoBehaviour
     {
-
         [SerializeField] private TextMeshPro copiesText;
+        [SerializeField] private bool isDeck;
         private Collection _card;
 
 
@@ -22,7 +22,16 @@ namespace DeckBuilder
         {
             _card.SetQuantity(_card.GetQuantity() - 1);
             copiesText.text = _card.GetQuantity() + "";
-            FindObjectOfType<CardsLocation>().UpdateCardButton(_card);
+
+            if (isDeck)
+            {
+                
+            }
+            else
+            {
+                FindObjectOfType<CardsLocation>().UpdateCardButton(_card);
+            }
+            
         }
 
         public void DestroyCardButton()

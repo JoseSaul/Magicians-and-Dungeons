@@ -70,6 +70,7 @@
     <Compile Include="Assets\Character\UI\UiController.cs" />
     <Compile Include="Assets\DeckBuilder\CardButton.cs" />
     <Compile Include="Assets\DeckBuilder\CardsLocation.cs" />
+    <Compile Include="Assets\DeckBuilder\DeckLocation.cs" />
     <Compile Include="Assets\DeckBuilder\TriggerCard.cs" />
     <Compile Include="Assets\DeckBuilder\UiDeckBuilder.cs" />
     <Compile Include="Assets\GameInstance.cs" />

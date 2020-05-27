@@ -3,18 +3,18 @@ using UnityEngine;
 
 namespace Cards
 {
-    public class Collection : MonoBehaviour
+    public class CardCollection : MonoBehaviour
     {
 
         private Card _card;
         private int _quantity;
 
-        public Collection()
+        public CardCollection()
         {
             
         }
         
-        public Collection(Card card, int quantity)
+        public CardCollection(Card card, int quantity)
         {
             _card = card;
             _quantity = quantity;

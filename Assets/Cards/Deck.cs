@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Random = System.Random;
@@ -16,6 +17,11 @@ namespace Cards
         private void Start()
         {
             InitDeck();
+        }
+
+        public Card[] GetDeck()
+        {
+            return deck;
         }
 
         public void InitDeck()
@@ -44,6 +50,6 @@ namespace Cards
                 return brokenCard;
             }
         }
-    
+
     }
 }

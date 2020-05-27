@@ -59,7 +59,7 @@
   <ItemGroup>
     <Compile Include="Assets\Cards\Attack\CardAttack.cs" />
     <Compile Include="Assets\Cards\Card.cs" />
-    <Compile Include="Assets\Cards\Collection.cs" />
+    <Compile Include="Assets\Cards\CardCollection.cs" />
     <Compile Include="Assets\Cards\Deck.cs" />
     <Compile Include="Assets\Cards\Magic\CardMagic.cs" />
     <Compile Include="Assets\Character\Hand\CardSpace.cs" />

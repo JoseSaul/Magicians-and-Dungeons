@@ -10,9 +10,9 @@ namespace DeckBuilder
     public class CardsLocation : MonoBehaviour
     {
        [SerializeField] private CardButton cardButton;
-        private List<Collection> _collection;
+        private List<CardCollection> _collection;
         private List<CardButton> _cardButtonList;
-        private  const float CardsDistance = 0.5f;
+        private  const float CardsDistance = 0.42f;
         private static Vector3 _initPosition;
 
 
@@ -95,21 +95,40 @@ namespace DeckBuilder
             }      
         }
 
-        public void UpdateCardButton(Collection collection)
+        public void UpdateCardButton(CardCollection cardCollection)
         {
             foreach (var c in _collection)
             {
-                if (c.GetCard().GetId() == collection.GetCard().GetId())
+                if (c.GetCard().GetId() == cardCollection.GetCard().GetId())
                 {
-                    c.SetQuantity(collection.GetQuantity());
+                    c.SetQuantity(cardCollection.GetQuantity());
                 }
             }
 
-            if (collection.GetQuantity() <= 0)
+            if (cardCollection.GetQuantity() <= 0)
             {
                 foreach (var cardB in _cardButtonList)
                 {
                    cardB.DestroyCardButton();
+                }
+
+                _cardButtonList.Clear();
+                ShowAllCards();
+            }
+        }
+
+        public void AddCard(CardCollection cardCollection)
+        {
+            foreach (var c in _collection)
+            {
+                if (c.GetCard().GetId() == cardCollection.GetCard().GetId())
+                {
+                    c.SetQuantity(c.GetQuantity() + 1);
+                }
+                
+                foreach (var cardB in _cardButtonList)
+                {
+                    cardB.DestroyCardButton();
                 }
 
                 _cardButtonList.Clear();

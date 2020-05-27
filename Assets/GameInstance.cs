@@ -1,4 +1,5 @@
-﻿using Boo.Lang;
+﻿using System.Security.Cryptography;
+using Boo.Lang;
 using Cards;
 using Character.UI;
 using DeckBuilder;
@@ -11,7 +12,7 @@ public class GameInstance : MonoBehaviour
     
     [SerializeField] private Deck deck;
     [SerializeField] private Card[] allCards;
-    private Collection[] _collectionCard;
+    private CardCollection[] _collectionCard;
     private int _lv = 1, _exp, _maxExp = 10, _maxLife = 10, _life, _maxMana = 10, _mana;
     private float _rechargeCard = 3, _recoverMana = 4f, _manaCoolDown;
 
@@ -120,9 +121,9 @@ public class GameInstance : MonoBehaviour
         return _recoverMana;
     }
 
-    public List<Collection> GetObtainedCard()
+    public List<CardCollection> GetObtainedCard()
     {
-        var collectionList = new List<Collection>();
+        var collectionList = new List<CardCollection>();
         foreach (var cardCollected in _collectionCard)
         {
             collectionList.Add(cardCollected);
@@ -130,15 +131,42 @@ public class GameInstance : MonoBehaviour
         
         return collectionList;
     }
+    
+    public List<CardCollection> GetDeckAsCollection()
+    {
+        var deckCollection = new List<CardCollection>();
+        var auxDeck = deck.GetDeck();
+        foreach (var card in auxDeck)
+        {
+            if (card != null)
+            {
+                var selectedCard = card;
+                int count = 0;
+
+                for (int i = 0; i < auxDeck.Length; i++)
+                {
+                    if (auxDeck[i] == selectedCard)
+                    {
+                        count++;
+                        auxDeck[i] = null;
+                    }
+                }
+
+                deckCollection.Add(new CardCollection(selectedCard, count));
+            }
+        }
+
+        return deckCollection;
+    }
 
     private void InitCollection()
     {
-        _collectionCard = new Collection[allCards.Length];
+        _collectionCard = new CardCollection[allCards.Length];
         
         for (var i = 0; i < _collectionCard.Length; i++)
         {
             // ReSharper disable once Unity.IncorrectMonoBehaviourInstantiation
-            _collectionCard[i] = new Collection(allCards[i],0);
+            _collectionCard[i] = new CardCollection(allCards[i],0);
         }
         
         //Cambiar por las que quieras.......................................................

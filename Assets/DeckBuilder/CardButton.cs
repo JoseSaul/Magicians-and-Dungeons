@@ -8,12 +8,12 @@ namespace DeckBuilder
     {
         [SerializeField] private TextMeshPro copiesText;
         [SerializeField] private bool isDeck;
-        private Collection _card;
+        private CardCollection _card;
 
 
-        public void CreateCardButton(Collection cardCollection)
+        public void CreateCardButton(CardCollection cardCardCollection)
         {
-            _card = cardCollection;
+            _card = cardCardCollection;
             copiesText.text = _card.GetQuantity() + "";
             Instantiate(_card.GetCard(), transform.position, Quaternion.Euler(-90,0,0),transform);
         }
@@ -25,11 +25,13 @@ namespace DeckBuilder
 
             if (isDeck)
             {
-                
+                FindObjectOfType<DeckLocation>().UpdateCardButton(_card);
+                FindObjectOfType<CardsLocation>().AddCard(_card);
             }
             else
             {
                 FindObjectOfType<CardsLocation>().UpdateCardButton(_card);
+                FindObjectOfType<DeckLocation>().AddCard(_card);
             }
             
         }

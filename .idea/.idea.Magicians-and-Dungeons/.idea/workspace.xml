@@ -17,6 +17,7 @@
     <setting file="file://C:/Program Files/Unity/Hub/Editor/2019.2.0f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Image.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Cards/Magic/CardMagic.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DeckBuilder/CardsLocation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/MainMenu/MainMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Character/UI/UiController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Character/UI/ButtonCard.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Base/Joystick.cs" root0="FORCE_HIGHLIGHTING" />
@@ -64,13 +65,14 @@
         <option value="$PROJECT_DIR$/Assets/DeckBuilder/Pulsador.cs" />
         <option value="$PROJECT_DIR$/Assets/DeckBuilder/TriggerCard.cs" />
         <option value="$PROJECT_DIR$/Assets/DeckBuilder/UIDeckBuilder.cs" />
-        <option value="$PROJECT_DIR$/Assets/Cards/Deck.cs" />
         <option value="$PROJECT_DIR$/Assets/Cards/Collection.cs" />
         <option value="$PROJECT_DIR$/Assets/Cards/CardCollection.cs" />
-        <option value="$PROJECT_DIR$/Assets/GameInstance.cs" />
-        <option value="$PROJECT_DIR$/Assets/DeckBuilder/CardsLocation.cs" />
         <option value="$PROJECT_DIR$/Assets/DeckBuilder/CardButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Cards/Deck.cs" />
+        <option value="$PROJECT_DIR$/Assets/DeckBuilder/CardsLocation.cs" />
         <option value="$PROJECT_DIR$/Assets/DeckBuilder/DeckLocation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/MainMenu/MainMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/GameInstance.cs" />
         <option value="$PROJECT_DIR$/Assets/DeckBuilder/UiDeckBuilder.cs" />
       </list>
     </option>
@@ -153,6 +155,8 @@
       <workItem from="1590145694846" duration="5324000" />
       <workItem from="1590489078096" duration="4955000" />
       <workItem from="1590573784666" duration="10160000" />
+      <workItem from="1590612233292" duration="4449000" />
+      <workItem from="1590662174694" duration="2246000" />
     </task>
     <servers />
   </component>

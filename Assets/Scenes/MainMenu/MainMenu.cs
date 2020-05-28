@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Scenes.MainMenu
 {
@@ -8,12 +9,12 @@ namespace Scenes.MainMenu
 
         public void StartGame()
         {
-        
+            SceneManager.LoadScene("Scenes/SampleScene");
         }
 
         public void EditDeck()
         {
-        
+            SceneManager.LoadScene("DeckBuilder/DeckBuilder");
         }
 
         public void ExitGame()

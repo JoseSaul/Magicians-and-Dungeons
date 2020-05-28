@@ -92,6 +92,11 @@ namespace DeckBuilder
             _cardButtonList.Clear();
             ShowAllCards();
         }
+
+        public Boo.Lang.List<CardCollection> GetDeckList()
+        {
+            return _deckCollection;
+        }
         
         
     }

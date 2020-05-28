@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿using System;
+using TMPro;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace DeckBuilder
@@ -8,7 +11,15 @@ namespace DeckBuilder
         [SerializeField] private Slider sliderCards, sliderDeck;
         [SerializeField] private CardsLocation cardsLocation;
         [SerializeField] private DeckLocation deckLocation;
-        
+        [SerializeField] private TextMeshProUGUI textCollection, textDeck;
+
+
+        private void Start()
+        {
+            textCollection.SetText(FindObjectOfType<GameInstance>().Language("Collection","Colección"));
+            textDeck.SetText(FindObjectOfType<GameInstance>().Language("Deck","Mazo"));
+        }
+
         public void UpdateSizeSliderCards(float size)
         {
             sliderCards.maxValue = size;
@@ -39,12 +50,17 @@ namespace DeckBuilder
 
         public void SaveDeck()
         {
-            
+            var gameInstance = FindObjectOfType<GameInstance>();
+            gameInstance.SetDeck(deckLocation.GetDeckList().ToArray());
+            gameInstance.SetCollection(cardsLocation.GetCollection());
+            //Save game.......................................................
+            SceneManager.LoadScene("Scenes/MainMenu");
+
         }
 
         public void ExitToMainMenu()
         {
-            
+            SceneManager.LoadScene("Scenes/MainMenu");
         }
     
 

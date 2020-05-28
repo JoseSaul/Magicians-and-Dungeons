@@ -15,6 +15,9 @@ public class GameInstance : MonoBehaviour
     private CardCollection[] _collectionCard;
     private int _lv = 1, _exp, _maxExp = 10, _maxLife = 10, _life, _maxMana = 10, _mana;
     private float _rechargeCard = 3, _recoverMana = 4f, _manaCoolDown;
+    
+    //Settings
+    private bool _eng = true;
 
 
 
@@ -94,6 +97,11 @@ public class GameInstance : MonoBehaviour
         return _maxMana;
     }
 
+    public string Language(string eng, string spa)
+    {
+        return _eng ? eng : spa;
+    }
+
     private void CheckMana()
     {
         if (_maxMana > _mana)
@@ -155,11 +163,28 @@ public class GameInstance : MonoBehaviour
                 deckCollection.Add(new CardCollection(selectedCard, count));
             }
         }
-
         return deckCollection;
     }
 
-    private void InitCollection()
+    public void SetDeck(CardCollection[] cardCollections)
+    {
+        var deckList = new List<Card>();
+        foreach (var collection in cardCollections)
+        {
+            for (var i = 0; i < collection.GetQuantity(); i++)
+            {
+                deckList.Add(collection.GetCard());
+            }
+        }
+        deck.SetDeck(deckList.ToArray());
+    }
+
+    public void SetCollection(CardCollection[] _collectionCard)
+    {
+        this._collectionCard = _collectionCard;
+    }
+
+        private void InitCollection()
     {
         _collectionCard = new CardCollection[allCards.Length];
         

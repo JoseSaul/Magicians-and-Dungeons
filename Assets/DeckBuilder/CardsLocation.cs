@@ -136,6 +136,11 @@ namespace DeckBuilder
             }
         }
 
+        public CardCollection[] GetCollection()
+        {
+            return _collection.ToArray();
+        }
+
         
     }
 }

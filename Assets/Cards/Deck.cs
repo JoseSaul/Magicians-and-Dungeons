@@ -14,6 +14,7 @@ namespace Cards
         private readonly List<Card> _deck = new List<Card>();
 
 
+        //quitar cuando esté los mapas---------------
         private void Start()
         {
             InitDeck();
@@ -22,6 +23,11 @@ namespace Cards
         public Card[] GetDeck()
         {
             return deck;
+        }
+
+        public void SetDeck(Card[] deck)
+        {
+            this.deck = deck;
         }
 
         public void InitDeck()

@@ -52,11 +52,8 @@
         <option value="$PROJECT_DIR$/Assets/Character/UI/LifeUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Character/UI/UIController.cs" />
         <option value="$PROJECT_DIR$/Assets/Character/UI/ButtonCard.cs" />
-        <option value="$PROJECT_DIR$/Assets/Character/PlayerController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Character/Hand/Hand.cs" />
         <option value="$PROJECT_DIR$/Assets/Character/UI/UiController.cs" />
         <option value="$PROJECT_DIR$/Assets/Character/Hand/CardSpace.cs" />
-        <option value="$PROJECT_DIR$/Assets/Character/UI/PauseMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Cards/Magic/CardMagic.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/MainMenu/MainManu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/DeckBuilder/CardButton.cs" />
@@ -68,12 +65,15 @@
         <option value="$PROJECT_DIR$/Assets/Cards/Collection.cs" />
         <option value="$PROJECT_DIR$/Assets/Cards/CardCollection.cs" />
         <option value="$PROJECT_DIR$/Assets/DeckBuilder/CardButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Cards/Deck.cs" />
-        <option value="$PROJECT_DIR$/Assets/DeckBuilder/CardsLocation.cs" />
-        <option value="$PROJECT_DIR$/Assets/DeckBuilder/DeckLocation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/MainMenu/MainMenu.cs" />
-        <option value="$PROJECT_DIR$/Assets/GameInstance.cs" />
+        <option value="$PROJECT_DIR$/Assets/DeckBuilder/CardsLocation.cs" />
         <option value="$PROJECT_DIR$/Assets/DeckBuilder/UiDeckBuilder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Character/UI/PauseMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/DeckBuilder/DeckLocation.cs" />
+        <option value="$PROJECT_DIR$/Assets/GameInstance.cs" />
+        <option value="$PROJECT_DIR$/Assets/Character/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Character/Hand/Hand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Cards/Deck.cs" />
       </list>
     </option>
   </component>
@@ -157,6 +157,9 @@
       <workItem from="1590573784666" duration="10160000" />
       <workItem from="1590612233292" duration="4449000" />
       <workItem from="1590662174694" duration="2246000" />
+      <workItem from="1590748211132" duration="2116000" />
+      <workItem from="1592572892726" duration="516000" />
+      <workItem from="1595850097046" duration="7395000" />
     </task>
     <servers />
   </component>

@@ -142,9 +142,9 @@ MonoBehaviour:
   rarity: 1
   id: 11
   textMeshCard: {fileID: 4287532564996620377}
-  manaCost: 0
+  manaCost: 2
   costMeshCard: {fileID: 11722121559507879}
-  magicalPower: 0
+  magicalPower: 2
 --- !u!1 &7332839925709545973
 GameObject:
   m_ObjectHideFlags: 0

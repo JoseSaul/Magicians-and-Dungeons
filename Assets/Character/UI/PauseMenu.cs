@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 namespace Character.UI
@@ -27,7 +28,7 @@ namespace Character.UI
 
         public void ExitToMainMenu()
         {
-            print("Salgo al menu");
+            SceneManager.LoadScene("Scenes/MainMenu");
         }
         
     }

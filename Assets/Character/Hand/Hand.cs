@@ -8,12 +8,13 @@ namespace Character.Hand
     {
     
         [SerializeField] private CardSpace[] cardSpaces;
-        private Deck _deck;
+        public Deck _deck;
         private float _rechargeCard;
 
         private void Start()
         {
-           var gameInstance = GameObject.Find("GameInstance").GetComponent<GameInstance>();
+           var gameInstance = FindObjectOfType<GameInstance>();
+           gameInstance.GetDeck().InitDeck();
             _deck = gameInstance.GetDeck();
             _rechargeCard = gameInstance.GetRechargeCard();
 

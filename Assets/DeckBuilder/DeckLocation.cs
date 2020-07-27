@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿
+using Boo.Lang;
 using Cards;
 using UnityEngine;
 
@@ -10,14 +11,24 @@ namespace DeckBuilder
         private List<CardButton> _cardButtonList;
         private  const float CardsDistance = 0.42f;
         private static Vector3 _initPosition;
-        private Boo.Lang.List<CardCollection> _deckCollection;
+        private List<CardCollection> _deckCollection;
 
         private void Start()
         {
             _cardButtonList = new List<CardButton>();
-            _deckCollection = FindObjectOfType<GameInstance>().GetDeckAsCollection();
+            
+            InitCards(FindObjectOfType<UiDeckBuilder>().GetDeckCollections());
             _initPosition = gameObject.transform.position;
             ShowAllCards();
+        }
+        
+        private void InitCards(List<CardCollection> collection)
+        {
+            _deckCollection = new List<CardCollection>();
+            foreach (var card in collection)
+            {
+                _deckCollection.Add(new CardCollection(card.GetCard(),card.GetQuantity()));
+            }
         }
         
         private void ShowAllCards()
@@ -93,9 +104,9 @@ namespace DeckBuilder
             ShowAllCards();
         }
 
-        public Boo.Lang.List<CardCollection> GetDeckList()
+        public CardCollection[] GetDeckList()
         {
-            return _deckCollection;
+            return _deckCollection.ToArray();
         }
         
         

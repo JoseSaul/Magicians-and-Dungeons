@@ -23,12 +23,21 @@ public class GameInstance : MonoBehaviour
 
     private void Start()
     {
-        _uiController = FindObjectOfType<UiController>();
         _manaCoolDown = _recoverMana;
         _life = _maxLife;
         _mana = _maxMana;
         
         InitCollection();
+    }
+
+    public void OnStartGame()
+    {
+        _uiController = FindObjectOfType<UiController>();
+        InitUi();
+        _uiController.SetMaxHealth(GetMaxLife());
+        _uiController.SetMaxMana(GetMaxMana());
+        _uiController.SetMaxExp(GetMaxExp());
+        _uiController.SetLv(GetLv());
     }
 
     private void Update()

@@ -26,12 +26,7 @@ namespace Character
             _player = GetComponent<CharacterController>();
             _anim = GetComponent<Animator>();
             _gameInstance = FindObjectOfType<GameInstance>();
-            
-            _gameInstance.InitUi();
-            uiController.SetMaxHealth(_gameInstance.GetMaxLife());
-            uiController.SetMaxMana(_gameInstance.GetMaxMana());
-            uiController.SetMaxExp(_gameInstance.GetMaxExp());
-            uiController.SetLv(_gameInstance.GetLv());
+            _gameInstance.OnStartGame();
         }
 
         private void Update()

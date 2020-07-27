@@ -32,6 +32,8 @@ namespace Cards
 
         public void InitDeck()
         {
+            _deck.Clear();
+            
             foreach (var card in deck)
             {
                 if (card != null)

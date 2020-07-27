@@ -19,9 +19,19 @@ namespace DeckBuilder
         private void Start()
         {
             _cardButtonList = new List<CardButton>();
-            _collection = FindObjectOfType<GameInstance>().GetObtainedCard();
+            //_collection = FindObjectOfType<UiDeckBuilder>().GetCollections();
+            InitCards(FindObjectOfType<UiDeckBuilder>().GetCollections());
             _initPosition = gameObject.transform.position;
             ShowAllCards();
+        }
+
+        private void InitCards(List<CardCollection> collection)
+        {
+            _collection = new List<CardCollection>();
+            foreach (var card in collection)
+            {
+                _collection.Add(new CardCollection(card.GetCard(),card.GetQuantity()));
+            }
         }
 
         private void ShowAllCards()

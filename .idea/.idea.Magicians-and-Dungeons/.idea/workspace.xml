@@ -21,6 +21,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Character/UI/UiController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Character/UI/ButtonCard.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Joystick Pack/Scripts/Base/Joystick.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Structures/LoadMap.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DeckBuilder/DeckLocation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Character/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Cards/Deck.cs" root0="FORCE_HIGHLIGHTING" />
@@ -74,6 +75,7 @@
         <option value="$PROJECT_DIR$/Assets/Character/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Character/Hand/Hand.cs" />
         <option value="$PROJECT_DIR$/Assets/Cards/Deck.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Structures/LoadMap.cs" />
       </list>
     </option>
   </component>
@@ -160,6 +162,7 @@
       <workItem from="1590748211132" duration="2116000" />
       <workItem from="1592572892726" duration="516000" />
       <workItem from="1595850097046" duration="7395000" />
+      <workItem from="1595940154305" duration="2493000" />
     </task>
     <servers />
   </component>

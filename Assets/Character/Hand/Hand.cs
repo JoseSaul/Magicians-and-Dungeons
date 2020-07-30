@@ -8,8 +8,9 @@ namespace Character.Hand
     {
     
         [SerializeField] private CardSpace[] cardSpaces;
-        public Deck _deck;
+        private Deck _deck;
         private float _rechargeCard;
+        private bool _onBattle;
 
         private void Start()
         {
@@ -17,22 +18,25 @@ namespace Character.Hand
            gameInstance.GetDeck().InitDeck();
             _deck = gameInstance.GetDeck();
             _rechargeCard = gameInstance.GetRechargeCard();
-
-            //Quitar cuando tenga trigger al entrar en combate:
-            StartCoroutine(InitHand());
         }
 
     
         public IEnumerator InitHand()
         {
             yield return new WaitForSeconds(0.1f);
-
+            _deck.InitDeck();
+            
             for (int i = 0; i < 3; i++)
             {
-                cardSpaces[i].DeleteCard();
                 cardSpaces[i].AddCardToSpace(_deck.GetCard());
             }
-            
+        }
+        
+        public void RemoveHand()
+        {
+            cardSpaces[0].DeleteCard();
+            cardSpaces[1].DeleteCard();
+            cardSpaces[2].DeleteCard();
         }
 
     
@@ -40,7 +44,7 @@ namespace Character.Hand
         {
             yield return new WaitForSeconds(_rechargeCard);
         
-            if (space.GetAvailable())
+            if (space.GetAvailable() && _onBattle)
             {
                 space.AddCardToSpace(_deck.GetCard());
             }
@@ -67,8 +71,13 @@ namespace Character.Hand
                 }
             }
         }
-    
-    
+
+
+        public void SetOnBattle(bool battle)
+        {
+            _onBattle = battle;
+        }
+        
     
     }
 }

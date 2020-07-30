@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using Random = System.Random;
 
@@ -12,22 +10,16 @@ namespace Cards
         [SerializeField] private Card[] deck = new Card[30];
         [SerializeField] private Card brokenCard;
         private readonly List<Card> _deck = new List<Card>();
-
-
-        //quitar cuando esté los mapas---------------
-        private void Start()
-        {
-            InitDeck();
-        }
+        
 
         public Card[] GetDeck()
         {
             return deck;
         }
 
-        public void SetDeck(Card[] deck)
+        public void SetDeck(Card[] arrayDeck)
         {
-            this.deck = deck;
+            this.deck = arrayDeck;
         }
 
         public void InitDeck()

@@ -1,8 +1,6 @@
-﻿using System.Security.Cryptography;
-using Boo.Lang;
+﻿using Boo.Lang;
 using Cards;
 using Character.UI;
-using DeckBuilder;
 using UnityEngine;
 
 public class GameInstance : MonoBehaviour

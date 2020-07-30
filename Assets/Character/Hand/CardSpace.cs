@@ -38,7 +38,10 @@ namespace Character.Hand
         {
             try
             {
-                Destroy(_card.gameObject);
+                if (_available == false)
+                {
+                    Destroy(_card.gameObject);
+                }
             }
             catch (NullReferenceException)
             {

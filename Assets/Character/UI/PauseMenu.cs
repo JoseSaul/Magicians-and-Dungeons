@@ -28,6 +28,7 @@ namespace Character.UI
 
         public void ExitToMainMenu()
         {
+            FindObjectOfType<GameInstance>().ExitGame();
             SceneManager.LoadScene("Scenes/MainMenu");
         }
         

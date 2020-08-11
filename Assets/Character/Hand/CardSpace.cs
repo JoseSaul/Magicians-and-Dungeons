@@ -21,9 +21,9 @@ namespace Character.Hand
             if (!_card.Equals(null) && FindObjectOfType<PlayerController>().GetCanMove() && !Time.timeScale.Equals(0))
             {
                 GameInstance gameInstance = FindObjectOfType<GameInstance>();
-                if (gameInstance.GetMana() >= _card.GetManaCost())
+                if (gameInstance.GetMana().GetMana() >= _card.GetManaCost())
                 {
-                    gameInstance.ConsumeMana(_card.GetManaCost());
+                    gameInstance.GetMana().ConsumeMana(_card.GetManaCost());
                 
                     _card.PlayCard();
                     Destroy(_card.gameObject);

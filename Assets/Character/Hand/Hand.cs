@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using Cards;
+using Cards.Enchantment.Auras;
 using UnityEngine;
 
 namespace Character.Hand
@@ -47,6 +48,7 @@ namespace Character.Hand
             if (space.GetAvailable() && _onBattle)
             {
                 space.AddCardToSpace(_deck.GetCard());
+                //FindObjectOfType<Aura>().TriggerAura();
             }
         }
     

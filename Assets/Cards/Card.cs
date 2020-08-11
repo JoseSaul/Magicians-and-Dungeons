@@ -18,8 +18,11 @@ namespace Cards
         {
             return typeCard;}
 
-        
-        public virtual void PlayCard(){}
+
+        public virtual void PlayCard()
+        {
+            
+        }
 
         
         public int GetManaCost()

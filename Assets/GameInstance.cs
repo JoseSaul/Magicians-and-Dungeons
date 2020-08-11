@@ -1,5 +1,6 @@
 ﻿using Boo.Lang;
 using Cards;
+using Stats;
 using Character.UI;
 using UnityEngine;
 
@@ -11,36 +12,46 @@ public class GameInstance : MonoBehaviour
     [SerializeField] private Deck deck;
     [SerializeField] private Card[] allCards;
     private CardCollection[] _collectionCard;
-    private int _lv = 1, _exp, _maxExp = 10, _maxLife = 10, _life, _maxMana = 10, _mana;
-    private float _rechargeCard = 3, _recoverMana = 4f, _manaCoolDown;
+    private Life _life;
+    private Mana _mana;
+    private Lv _lv;
+    private float _rechargeCard = 3;
+    private bool _onGame;
     
-    //Settings
-    private bool _eng = true;
-
-
 
     private void Start()
     {
-        _manaCoolDown = _recoverMana;
-        _life = _maxLife;
-        _mana = _maxMana;
-        
+        _life = new Life();
+        _mana = new Mana();
+        _lv = new Lv();
+
         InitCollection();
     }
 
     public void OnStartGame()
     {
+        _onGame = true;
         _uiController = FindObjectOfType<UiController>();
-        InitUi();
-        _uiController.SetMaxHealth(GetMaxLife());
-        _uiController.SetMaxMana(GetMaxMana());
-        _uiController.SetMaxExp(GetMaxExp());
-        _uiController.SetLv(GetLv());
+        _life.InitLife(_uiController);
+        _mana.InitMana(_uiController);
+        _uiController.SetMaxHealth(_life.GetMaxLife());
+        _uiController.SetMaxMana(_mana.GetMaxMana());
+        _uiController.SetMaxExp(_lv.GetMaxExp());
+        _uiController.SetExp(_lv.GetExp());
+        _uiController.SetLv(_lv.GetLV());
+    }
+
+    public void ExitGame()
+    {
+        _onGame = false;
     }
 
     private void Update()
     {
-        CheckMana();
+        if (_onGame)
+        {
+            _mana.CheckMana();
+        }
     }
 
     private void Awake()
@@ -56,85 +67,48 @@ public class GameInstance : MonoBehaviour
         }
     }
 
-
-    public void InitUi()
+    public void ReceiveDamage(int damage)
     {
-        _life = _maxLife;
-        _mana = _maxMana;
+        if (_life.IsDeath(damage))
+        {
+            print("Esta muerto");
+        }
     }
+    
 
+    //GetStats
     public Deck GetDeck()
     {
         return deck;
     }
-
-    public int GetMaxLife()
-    {
-        return _maxLife;
-    }
-
-    public int GetMaxMana()
-    {
-        return _maxMana;
-    }
-
-    public int GetMaxExp()
-    {
-        return _maxExp;
-    }
-
-    public int GetLv()
-    {
-        return _lv;
-    }
     
-    public int GetMana()
+
+    public Life GetLife()
+    {
+        return _life;
+    }
+
+    public Mana GetMana()
     {
         return _mana;
     }
 
-    public void ConsumeMana(int consume)
-    {
-        _mana -= consume;
-        FindObjectOfType<UiController>().SetMana(_mana);
-    }
     
-    public int GetTotalMana()
-    {
-        return _maxMana;
-    }
-
+    //Settings
+    private bool _eng = true;
+    
     public string Language(string eng, string spa)
     {
         return _eng ? eng : spa;
     }
+    
 
-    private void CheckMana()
-    {
-        if (_maxMana > _mana)
-        {
-            if (_manaCoolDown > 0)
-            {
-                _manaCoolDown -= Time.deltaTime;
-            }
-            else
-            {
-                _mana++;
-                _uiController.SetMana(_mana);
-                _manaCoolDown = _recoverMana;
-            }
-        }
-    }
-
+    //Deck
     public float GetRechargeCard()
     {
         return _rechargeCard;
     }
-
-    public float GetRecoverMana()
-    {
-        return _recoverMana;
-    }
+    
 
     public List<CardCollection> GetObtainedCard()
     {

@@ -46,12 +46,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rarity: 0
   id: 0
-  textMeshCard: {fileID: 0}
-  manaCost: 0
+  textMeshCard: {fileID: 4982229083521770587}
+  manaCost: 3
   costMeshCard: {fileID: 2465493143522546034}
-  textCard: {fileID: 4982229083521770587}
   aura: {fileID: 0}
-  cardText: 
+  cardTextEn: 
+  cardTextSp: 
 --- !u!1 &2671075778029343508
 GameObject:
   m_ObjectHideFlags: 0

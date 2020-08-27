@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Cards
 {
-    public class CardCollection : MonoBehaviour
+    public class CardCollection
     {
 
         private Card _card;

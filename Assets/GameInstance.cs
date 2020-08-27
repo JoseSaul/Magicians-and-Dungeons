@@ -130,9 +130,9 @@ public class GameInstance : MonoBehaviour
             if (card != null)
             {
                 var selectedCard = card;
-                int count = 0;
+                var count = 0;
 
-                for (int i = 0; i < auxDeck.Length; i++)
+                for (var i = 0; i < auxDeck.Length; i++)
                 {
                     if (auxDeck[i] == selectedCard)
                     {
@@ -160,9 +160,9 @@ public class GameInstance : MonoBehaviour
         deck.SetDeck(deckList.ToArray());
     }
 
-    public void SetCollection(CardCollection[] _collectionCard)
+    public void SetCollection(CardCollection[] collectionCard)
     {
-        this._collectionCard = _collectionCard;
+        this._collectionCard = collectionCard;
     }
 
         private void InitCollection()

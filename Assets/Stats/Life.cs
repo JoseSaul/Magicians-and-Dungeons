@@ -28,6 +28,19 @@ namespace Stats
 
             return _life <= 0;
         }
+
+        public void Cure(int health)
+        {
+            if (health + _life > _maxLife)
+            {
+                _life = _maxLife;
+            }
+            else
+            {
+                _life += health;
+            }
+            _uiController.SetHealth(_life);
+        } 
         
         
     }

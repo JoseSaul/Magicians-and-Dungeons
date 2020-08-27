@@ -8,22 +8,23 @@ namespace Cards.Enchantment
     {
 
         [SerializeField] private TextMeshPro costMeshCard;
-        [SerializeField] private TextMeshPro textCard;
         [SerializeField] private GameObject aura;
-        [SerializeField] private string cardText;
+        [SerializeField] private string cardTextEn, cardTextSp;
         
         
         private void Start()
         {
             typeCard = 2;
-            textCard.text = cardText;
+            var gi = FindObjectOfType<GameInstance>();
+            textMeshCard.text = gi.Language(cardTextEn,cardTextSp);
             costMeshCard.text = manaCost + "";
         }
         
         public override void PlayCard()
         { 
-            FindObjectOfType<PlayerController>().CardAnimation("Magic");
+            FindObjectOfType<PlayerController>().CardAnimation("Aura");
                 
+            Instantiate(aura, new Vector3(0, 0, 0), Quaternion.identity);
             Debug.Log("Aura");
         }
         

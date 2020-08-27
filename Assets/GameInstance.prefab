@@ -75,7 +75,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  brokenCard: {fileID: 1206361750166891755, guid: e575fc8432d692a4397b74e531d86a0e,
+  brokenCard: {fileID: 2547924254898208156, guid: e575fc8432d692a4397b74e531d86a0e,
     type: 3}
 --- !u!114 &9116337139406517845
 MonoBehaviour:

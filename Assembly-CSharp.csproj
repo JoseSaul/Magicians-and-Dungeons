@@ -58,12 +58,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Cards\Attack\BrokenCard.cs" />
      <Compile Include="Assets\Cards\Attack\CardAttack.cs" />
      <Compile Include="Assets\Cards\Card.cs" />
      <Compile Include="Assets\Cards\CardCollection.cs" />
      <Compile Include="Assets\Cards\Deck.cs" />
      <Compile Include="Assets\Cards\Enchantment\Auras\Aura.cs" />
      <Compile Include="Assets\Cards\Enchantment\CardEnchantment.cs" />
+     <Compile Include="Assets\Cards\Item\CardItem.cs" />
      <Compile Include="Assets\Cards\Magic\CardMagic.cs" />
      <Compile Include="Assets\Character\Hand\CardSpace.cs" />
      <Compile Include="Assets\Character\Hand\Hand.cs" />

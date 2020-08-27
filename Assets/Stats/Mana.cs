@@ -45,6 +45,19 @@ namespace Stats
             _mana -= consume;
             _uiController.SetMana(_mana);
         }
+
+        public void RestoreMana(int mana)
+        {
+            if (_mana + mana > _maxMana)
+            {
+                _mana = _maxMana;
+            }
+            else
+            {
+                _mana += mana;
+            }
+            _uiController.SetHealth(_mana);
+        }
         
         
         public void CheckMana()

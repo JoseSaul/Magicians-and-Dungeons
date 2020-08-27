@@ -9,6 +9,7 @@
       <e p="Assets" t="Include">
         <e p="Cards" t="Include">
           <e p="Attack" t="Include">
+            <e p="BrokenCard.cs" t="Include" />
             <e p="CardAttack.cs" t="Include" />
           </e>
           <e p="Card.cs" t="Include" />
@@ -19,6 +20,9 @@
               <e p="Aura.cs" t="Include" />
             </e>
             <e p="CardEnchantment.cs" t="Include" />
+          </e>
+          <e p="Item" t="Include">
+            <e p="CardItem.cs" t="Include" />
           </e>
           <e p="Magic" t="Include">
             <e p="CardMagic.cs" t="Include" />

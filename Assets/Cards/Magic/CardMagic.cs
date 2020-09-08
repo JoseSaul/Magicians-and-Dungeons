@@ -19,7 +19,6 @@ namespace Cards.Magic
             var gi = FindObjectOfType<GameInstance>();
             textMeshCard.text = (magicalPower + _bonusPower) + gi.Language(" Magical Damage", " Daño Mágico");
             costMeshCard.text = manaCost + "";
-            print("me manifiesto");
         }
         
         

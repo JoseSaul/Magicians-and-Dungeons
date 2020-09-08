@@ -162,7 +162,7 @@ public class GameInstance : MonoBehaviour
 
     public void SetCollection(CardCollection[] collectionCard)
     {
-        this._collectionCard = collectionCard;
+        _collectionCard = collectionCard;
     }
 
         private void InitCollection()
@@ -179,7 +179,9 @@ public class GameInstance : MonoBehaviour
         _collectionCard[0].SetQuantity(4);
         _collectionCard[1].SetQuantity(2);
         _collectionCard[2].SetQuantity(1);
-        
+        _collectionCard[3].SetQuantity(1);
+        _collectionCard[4].SetQuantity(1);
+        _collectionCard[5].SetQuantity(1);
     }
     
     

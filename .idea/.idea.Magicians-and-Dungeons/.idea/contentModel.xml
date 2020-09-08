@@ -18,6 +18,7 @@
           <e p="Enchantment" t="Include">
             <e p="Auras" t="Include">
               <e p="Aura.cs" t="Include" />
+              <e p="HolyLight.cs" t="Include" />
             </e>
             <e p="CardEnchantment.cs" t="Include" />
           </e>

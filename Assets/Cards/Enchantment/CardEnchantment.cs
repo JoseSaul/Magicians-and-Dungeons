@@ -25,7 +25,6 @@ namespace Cards.Enchantment
             FindObjectOfType<PlayerController>().CardAnimation("Aura");
                 
             Instantiate(aura, new Vector3(0, 0, 0), Quaternion.identity);
-            Debug.Log("Aura");
         }
         
         

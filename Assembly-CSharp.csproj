@@ -64,6 +64,7 @@
      <Compile Include="Assets\Cards\CardCollection.cs" />
      <Compile Include="Assets\Cards\Deck.cs" />
      <Compile Include="Assets\Cards\Enchantment\Auras\Aura.cs" />
+     <Compile Include="Assets\Cards\Enchantment\Auras\HolyLight.cs" />
      <Compile Include="Assets\Cards\Enchantment\CardEnchantment.cs" />
      <Compile Include="Assets\Cards\Item\CardItem.cs" />
      <Compile Include="Assets\Cards\Magic\CardMagic.cs" />

@@ -48,7 +48,6 @@ namespace Character.Hand
             if (space.GetAvailable() && _onBattle)
             {
                 space.AddCardToSpace(_deck.GetCard());
-                //FindObjectOfType<Aura>().TriggerAura();
             }
         }
     
@@ -79,7 +78,18 @@ namespace Character.Hand
         {
             _onBattle = battle;
         }
-        
+
+        public Card[] GetCardsOfHand()
+        {
+            var cards = new Card[3];
+
+            for (var i = 0; i < 3; i++)
+            {
+                cards[i] = cardSpaces[i].GetCard();
+            }
+
+            return cards;
+        }
     
     }
 }

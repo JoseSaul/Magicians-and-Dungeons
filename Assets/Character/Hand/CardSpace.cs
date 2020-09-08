@@ -1,5 +1,6 @@
 ﻿using System;
 using Cards;
+using Cards.Enchantment.Auras;
 using UnityEngine;
 
 namespace Character.Hand
@@ -14,6 +15,13 @@ namespace Character.Hand
         {
             _card = Instantiate(card, transform.position, Quaternion.Euler(-45,0,0),transform);
             _available = false;
+
+            var aura = FindObjectOfType<Aura>();
+            if (aura != null)
+            {
+                aura.TriggerAura(_card);
+            }
+            
         }
 
         public void PlayCard()
@@ -55,8 +63,12 @@ namespace Character.Hand
         {
             return _available;
         }
-        
-    
+
+
+        public Card GetCard()
+        {
+            return _card;
+        }
     
     }
 }

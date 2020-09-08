@@ -32,6 +32,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/DeckBuilder/UiDeckBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Structures/LoadDeck.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Unity/Hub/Editor/2019.2.0f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Image.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Cards/Enchantment/Auras/HolyLight.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Cards/Enchantment/CardEnchantment.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Structures/LoadMap.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DeckBuilder/DeckLocation.cs" root0="FORCE_HIGHLIGHTING" />
@@ -76,22 +77,23 @@
         <option value="$PROJECT_DIR$/Assets/Scenes/Structures/LoadMap.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/Structures/LoadDeck.cs" />
         <option value="$PROJECT_DIR$/Assets/Cards/Deck.cs" />
-        <option value="$PROJECT_DIR$/Assets/Cards/Enchantment/Auras/Aura.cs" />
-        <option value="$PROJECT_DIR$/Assets/Character/Hand/CardSpace.cs" />
         <option value="$PROJECT_DIR$/Assets/Character/Stats/Mana.cs" />
-        <option value="$PROJECT_DIR$/Assets/Character/Hand/Hand.cs" />
         <option value="$PROJECT_DIR$/Assets/Character/UI/PauseMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Stats/LV.cs" />
         <option value="$PROJECT_DIR$/Assets/Cards/CardCollection.cs" />
-        <option value="$PROJECT_DIR$/Assets/GameInstance.cs" />
         <option value="$PROJECT_DIR$/Assets/Cards/Card.cs" />
         <option value="$PROJECT_DIR$/Assets/Stats/Life.cs" />
         <option value="$PROJECT_DIR$/Assets/Stats/Mana.cs" />
         <option value="$PROJECT_DIR$/Assets/Cards/Item/CardItem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Cards/Enchantment/CardEnchantment.cs" />
-        <option value="$PROJECT_DIR$/Assets/Cards/Magic/CardMagic.cs" />
         <option value="$PROJECT_DIR$/Assets/Cards/Attack/CardAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Cards/Attack/BrokenCard.cs" />
+        <option value="$PROJECT_DIR$/Assets/Cards/Enchantment/Auras/HolyLight.cs" />
+        <option value="$PROJECT_DIR$/Assets/Cards/Magic/CardMagic.cs" />
+        <option value="$PROJECT_DIR$/Assets/GameInstance.cs" />
+        <option value="$PROJECT_DIR$/Assets/Character/Hand/CardSpace.cs" />
+        <option value="$PROJECT_DIR$/Assets/Cards/Enchantment/Auras/Aura.cs" />
+        <option value="$PROJECT_DIR$/Assets/Cards/Enchantment/CardEnchantment.cs" />
+        <option value="$PROJECT_DIR$/Assets/Character/Hand/Hand.cs" />
       </list>
     </option>
   </component>
@@ -188,6 +190,7 @@
       <workItem from="1597322638081" duration="866000" />
       <workItem from="1597669024084" duration="5807000" />
       <workItem from="1598357634064" duration="4070000" />
+      <workItem from="1599563201944" duration="6733000" />
     </task>
     <servers />
   </component>

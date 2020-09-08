@@ -45,13 +45,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rarity: 0
-  id: 0
+  id: 31
   textMeshCard: {fileID: 4982229083521770587}
   manaCost: 3
   costMeshCard: {fileID: 2465493143522546034}
-  aura: {fileID: 0}
-  cardTextEn: 
-  cardTextSp: 
+  aura: {fileID: 6451042896954755295, guid: 09cf25a7347e9754ca90cd2e78cef0a9, type: 3}
+  cardTextEn: Attack Cards get +1
+  cardTextSp: Cartas de ataque +1
 --- !u!1 &2671075778029343508
 GameObject:
   m_ObjectHideFlags: 0
@@ -491,7 +491,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8925572052695610135}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0.63802284, y: 4.7773943, z: 2.0744514}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1.1999999}
   m_Children:
   - {fileID: 5036392710444569548}

@@ -12,7 +12,6 @@ namespace Cards.Attack
 
         private void Start()
         {
-            typeCard = 0;
             manaCost = 0;
             var gi = FindObjectOfType<GameInstance>();
             textMeshCard.text = (power + _bonusPower) + gi.Language(" Physical Damage", " Daño Físico");

@@ -5,6 +5,8 @@ namespace Cards.Enchantment.Auras
 {
     public class Aura : MonoBehaviour
     {
+        protected int boost;
+        
         private void Start()
         {
             var card = FindObjectOfType<Hand>().GetCardsOfHand();
@@ -20,6 +22,11 @@ namespace Cards.Enchantment.Auras
         public virtual void TriggerAura(Card card)
         {
             
+        }
+
+        public void SetBoost(int booster)
+        {
+            boost = booster;
         }
         
     }

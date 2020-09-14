@@ -9,7 +9,6 @@ namespace Cards.Attack
 
         void Start()
         {
-            typeCard = 0;
             manaCost = 0;
             var gi = FindObjectOfType<GameInstance>();
             textMeshCard.text = (Power) + gi.Language(" Physical Damage and 2 to you", " Daño Físico y 2 a ti") ;

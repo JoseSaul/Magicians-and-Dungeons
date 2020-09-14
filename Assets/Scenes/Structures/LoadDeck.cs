@@ -1,4 +1,5 @@
-﻿using Character.Hand;
+﻿using Cards.Enchantment.Auras;
+using Character.Hand;
 using UnityEngine;
 
 namespace Scenes.Structures
@@ -17,6 +18,13 @@ namespace Scenes.Structures
             var hand = FindObjectOfType<Hand>();
             hand.SetOnBattle(false);
             hand.RemoveHand();
+
+            var auras = FindObjectsOfType<Aura>();
+            foreach (var aura in auras)
+            {
+                Destroy(aura.gameObject);    
+            }
+            
         }
     }
 }

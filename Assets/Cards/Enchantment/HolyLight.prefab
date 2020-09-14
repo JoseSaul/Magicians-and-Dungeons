@@ -52,6 +52,7 @@ MonoBehaviour:
   aura: {fileID: 6451042896954755295, guid: 09cf25a7347e9754ca90cd2e78cef0a9, type: 3}
   cardTextEn: Attack Cards get +1
   cardTextSp: Cartas de ataque +1
+  boost: 1
 --- !u!1 &2671075778029343508
 GameObject:
   m_ObjectHideFlags: 0

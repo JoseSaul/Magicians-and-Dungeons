@@ -9,13 +9,6 @@ namespace Cards
         [SerializeField] private int id;
         [SerializeField] protected TextMeshPro textMeshCard;
         [SerializeField] protected int manaCost;
-        
-        protected byte typeCard = 0;
-
-
-        public byte GetTypeCard()
-        {
-            return typeCard;}
 
 
         public virtual void PlayCard()

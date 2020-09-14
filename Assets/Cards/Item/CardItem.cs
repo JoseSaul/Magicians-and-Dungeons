@@ -10,7 +10,6 @@ namespace Cards.Item
         
         private void Start()
         {
-            typeCard = 3;
             textMeshCard.text = "";
             var gi = FindObjectOfType<GameInstance>();
             
